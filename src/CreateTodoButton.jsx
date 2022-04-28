@@ -3,7 +3,7 @@ import './CreateTodoButton.css';
 
 const CreateTodoButton = () =>{
   return(
-    <button className="CreateTodoButton">+</button>
+    <button className="CreateTodoButton" onClick={()=>{console.log('presiono el boton agregar')}}>+</button>
   )
 }
 
