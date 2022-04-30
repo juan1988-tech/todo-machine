@@ -14,11 +14,12 @@ const todos = [
 ];
 
 function App() {
+  const [searchValue, setSearchValue] = React.useState('');
   return (
     <React.Fragment>
       <TodoCounter />
-      <TodoSearch />
-
+      <TodoSearch value={searchValue} setSearchValue={setSearchValue}/>
+      <p>{searchValue}</p>
       <TodoList>
         {todos.map(todo => (
           <TodoItem
