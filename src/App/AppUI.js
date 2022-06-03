@@ -7,6 +7,7 @@ import TodoItem from '../TodoItem/TodoItem';
 import CreateTodoButton from '../CreateTodoButton/CreateTodoButton';
 import { TodoContext } from '../TodoContext/TodoContext';
 import { Modal } from '../Modal/Modal';
+import TodoForm from '../TodoForm/TodoForm';
 
 
 function AppUI(){
@@ -31,8 +32,8 @@ function AppUI(){
          </TodoList>
          {(openModal === true) && (
             <Modal>
-            <p>Teletransportacion</p>
-          </Modal>
+                <TodoForm/>
+            </Modal>
          )}
     <CreateTodoButton 
     setOpenModal={setOpenModal}
